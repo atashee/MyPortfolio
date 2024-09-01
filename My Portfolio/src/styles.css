@@ -173,26 +173,29 @@ header {
   
 
 .contact-info {
-    background: linear-gradient(to right, #800080, #ee82ee); /* Purple to violet gradient */
-    padding: 3rem;
+    background: linear-gradient(to right, #800080, #ee82ee); 
+    padding: 20px;
     border-radius: 1rem;
     color: #4b0548; /* Light text on dark background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 2rem;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 50px;
   }
   
   .contact-info h2 {
     font-size: 2.5rem;
+    font-style: bold;
     margin-bottom: 1.5rem;
-    color: #4b0548; /* Light color for the heading */
+    color: #4b0548; 
     text-align: center;
     font-weight: 600;
   }
 
   .contact-info p {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #4b0548; /* Light color for the heading */
+    margin-bottom: 10px;
+    color: #4b0548; 
     text-align: center;
     font-size: 1.2rem;
   }
@@ -213,7 +216,7 @@ header {
   }
   
   .contact-details a:hover {
-    color: #4b0548; /* Light violet on hover */
+    color: #4b0548; 
   }
   
   .resume {
@@ -241,8 +244,12 @@ header {
   }
   
   .social-links a:hover {
-    color: #4b0548; /* Light violet on hover */
-    transform: scale(1.1); /* Slightly increase size on hover */
+    color: #4b0548;
+    transform: scale(1.1); 
+  }
+  
+  html {
+    scroll-behavior: smooth;
   }
   
 
@@ -277,12 +284,12 @@ header {
 
 
 .home-img img {
-    width: 50%; /* Adjust the percentage to make the image smaller or larger */
+    width: 50%; 
     height: auto;
-    max-width: 300px; /* Optional: Set a maximum width */
-    max-height: 300px; /* Optional: Set a maximum height */
-    object-fit: cover; /* This ensures the image maintains its aspect ratio */
-    border-radius: 35%
+    max-width: 300px; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 100%
   }
   
 .home-text h2 {
@@ -352,4 +359,173 @@ header {
   display: flex;
 
   align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+section.about {
+  animation-delay: 0.5s;
+}
+
+section.skills {
+  animation-delay: 1s;
+}
+
+section.projects {
+  animation-delay: 1.5s;
+}
+
+section.contact-info {
+  animation-delay: 2s;
+}
+
+.btn:hover {
+  background: #f7f7f2;
+  color: #1e1e24;
+  transform: translateY(5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.scroll-btn {
+  animation: bounce 2s infinite;
+}
+
+.socials-icons i:hover {
+  transform: rotate(360deg);
+  transition: transform 0.8s;
+}
+
+/* src/styles.css */
+
+/* Initial state before animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(100px); /* Adjust as needed */
+  transition: all 0.6s ease-in-out; /* Smooth transition */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide Up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* src/styles.css */
+
+/* Initial state before animation */
+.hidden {
+  opacity: 0;
+  transform: scale(0.5); /* Start smaller */
+  transition: all 0.6s ease-in-out; /* Smooth transition */
+}
+
+/* Pop-up Animation */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); /* Smaller and transparent */
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1); /* Slightly larger for the "pop" effect */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Full size */
+  }
+}
+
+.animate-popUp {
+  animation: popUp 0.6s ease-in-out forwards; /* Apply the popUp animation */
+  opacity: 1;
+  transform: scale(1);
 }
