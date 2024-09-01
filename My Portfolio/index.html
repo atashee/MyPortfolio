@@ -2,122 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"   
- />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>   
-
   <link rel="stylesheet" href="src/styles.css" />
+  <script defer src="src/index.js"></script>
 </head>
 <body>
   <header>
     <a href="#" class="logo">Pauline Sanchez</a>
-    <ul class="navmenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </header>   
+    <nav>
+      <ul class="navmenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="home" class="home">
-    <div class="home-text">   
-
-      <h2>Hello I'm Pauline <i class="ph-bold ph-hand-waving"></i></h2>
-      <h3>Web Development</h3>
-      <p>"I'm Pauline, a passionate and driven web designer at the beginning of an exciting journey in the digital design world. 
-        Armed with a solid foundation in HTML, CSS, and JavaScript, I honed my skills through hands-on projects, SheCodes Foundation's 
-        BootCamp, and a deep love for creating visually engaging and user-friendly websites. <br />
-        
-        <br />
-        Though new to the industry, I bring fresh 
-        perspectives and a strong commitment to continuous learning and growth. 
-        Eager to collaborate and innovate, I'm dedicated to delivering designs that not only meet client needs but also exceed expectations. 
-        Whether it's building a personal portfolio or contributing to a larger project, I'm ready to bring creativity and technical know-how 
-        to the table, helping to craft web experiences that leave a lasting impression."</p>
+  <main>
+    <section id="home" class="home">
+      <div class="home-text hidden">   
+        <h2>Hello I'm Pauline <i class="ph-bold ph-hand-waving"></i></h2>
+        <h3>Web Development</h3>
+        <p>"I'm Pauline, a passionate and driven web designer at the beginning of an exciting journey in the digital design world. 
+          Armed with a solid foundation in HTML, CSS, and JavaScript, I honed my skills through hands-on projects, SheCodes Foundation's 
+          BootCamp, and a deep love for creating visually engaging and user-friendly websites. <br />
+          <br />
+          Though new to the industry, I bring fresh 
+          perspectives and a strong commitment to continuous learning and growth. 
+          Eager to collaborate and innovate, I'm dedicated to delivering designs that not only meet client needs but also exceed expectations. 
+          Whether it's building a personal portfolio or contributing to a larger project, I'm ready to bring creativity and technical know-how 
+          to the table, helping to craft web experiences that leave a lasting impression."</p>
         <div class="home-btn">
-            <a href="#" class="btn">Contact Info</a>
-            <a href="#" class="btn">Download CV <i class="ph ph-read-cv-logo"></i></a>
-          </div>
-    
-    </div>
-    <div class="home-img">
-      <img src="img/picture.jpg" />
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>"I'm a passionate and driven web designer, creative and detail-oriented, and an exciting journey in the digital design world. 
-        Armed with a solid foundation in HTML, CSS, and JavaScript, I honed my skills through hands-on projects in SheCodes Foundations 
-        BootCamp and a deep love for creating visually engaging and user-friendly websites."</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Flexbox and Grid Layouts</li>
-      <li>Basic Hosting in Netlify</li>
-      <li>Version Control (Git & GitHub)</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Selenophile Webpage</h3>
-        <p>This app or webpage is dedicated to "selenophiles," individuals who have a deep love for the moon. It highlights 
-            the positive impacts of this love, such as fostering a connection with nature, inspiring creativity, promoting emotional 
-            balance, and emphasizing the moon's cultural significance. The app also explores the concept of intuition, listing key traits 
-            of intuitive people, including being perceptive, empathetic, creative, decisive, and visionary. The design uses a green and teal 
-            color scheme with a focus on simplicity and readability.</p>
+          <a href="#contact" class="btn">Contact Info</a>
+          <a href="path/Pau CV Updated 2024.pdf" class="btn" download>Download CV <i class="ph ph-read-cv-logo"></i></a>
+        </div>
       </div>
-      <div class="project">
-        <h3>Weather App</h3>
-        <p>This weather app provides real-time weather information, including current temperature, humidity, and wind speed, 
-            along with a five-day forecast. The user interface features a search bar for city-specific data and a clean, modern 
-            design with a purple and pink color scheme.</p>
+      <div class="home-img">
+        <img src="img/picture.jpg" alt="Pauline Sanchez" />
       </div>
-      <!-- Add more projects as needed -->
-    </div>
-  </section>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about hidden">
+      <h2>About Me</h2>
+      <p>"I'm a passionate and driven web designer, creative and detail-oriented, and an exciting journey in the digital design world. 
+          Armed with a solid foundation in HTML, CSS, and JavaScript, I honed my skills through hands-on projects in SheCodes Foundations 
+          BootCamp and a deep love for creating visually engaging and user-friendly websites."</p>
+    </section>
 
-   <!-- Contact Section -->
-   <section id="contact" class="contact-info">
-    <h2>Contact Info</h2>
-    <p>Email: <a href="mailto:univietabledream2.0@gmail.com">univietabledream2.0@gmail.com</a></p>
-    <p>Phone: <a href="tel:+639674504702">+639674504702</a></p>
-    <p>Location: Phase 2 Mary Chin Street Farconville subdivison Barangay San Francisco San Pablo City Laguna 4000, Philippines</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills hidden">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Flexbox and Grid Layouts</li>
+        <li>Basic Hosting in Netlify</li>
+        <li>Version Control (Git & GitHub)</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects hidden">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Selenophile Webpage</h3>
+          <p>This app or webpage is dedicated to "selenophiles," individuals who have a deep love for the moon. It highlights 
+              the positive impacts of this love, such as fostering a connection with nature, inspiring creativity, promoting emotional 
+              balance, and emphasizing the moon's cultural significance. The app also explores the concept of intuition, listing key traits 
+              of intuitive people, including being perceptive, empathetic, creative, decisive, and visionary. The design uses a green and teal 
+              color scheme with a focus on simplicity and readability.</p>
+        </div>
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>This weather app provides real-time weather information, including current temperature, humidity, and wind speed, 
+              along with a five-day forecast. The user interface features a search bar for city-specific data and a clean, modern 
+              design with a purple and pink color scheme.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-info">
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong> <a href="mailto:univietabledream2.0@gmail.com">univietabledream2.0@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+639674504702">+639674504702</a></p>
+      <p><strong>Location:</strong> Phase 2 Mary Chin Street Farconville subdivison <br>
+        Barangay San Francisco San Pablo City Laguna 4000, Philippines</p>
+      
+      <div class="resume">
+        <a href="path/Pau CV Updated 2024.pdf" class="btn" download>Download Resume</a>
+      </div>
     
-    <div class="resume">
-      <a href="path/Pau CV Updated 2024.pdf" class="btn" download>Download Resume</a>
-    </div>
-  
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/paulinesanchez93/" target="_blank">
-        <i class="ph-bold ph-linkedin-logo"></i> LinkedIn
-      </a>
-      <a href="https://github.com/your-username" target="_blank">
-        <i class="ph-bold ph-github-logo"></i> GitHub
-      </a>
-      <a href="https://www.instagram.com/paulinesanchez__" target="_blank">
-        <i class="ph-bold ph-instagram-logo"></i> Instagram
-      </a>
-    </div>
-  </section>
-  
-  <div class="socials-icons">
-    <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
-    <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
-    <a href="#"><i class="ph-bold ph-github-logo"></i></a>
-  </div>   
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/paulinesanchez93/" target="_blank">
+          <i class="ph-bold ph-linkedin-logo"></i> LinkedIn
+        </a>
+        <a href="https://github.com/atashee" target="_blank">
+          <i class="ph-bold ph-github-logo"></i> GitHub
+        </a>
+        <a href="https://www.instagram.com/paulinesanchez__" target="_blank">
+          <i class="ph-bold ph-instagram-logo"></i> Instagram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials-icons">
+      <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>      
+      <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
+      <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+    </div>   
+  </footer>
 
   <a href="#" class="scroll-btn">Scroll down
     <i class="ph-bold ph-arrow-bend-right-down"></i>
