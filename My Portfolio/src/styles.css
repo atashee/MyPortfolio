@@ -9,7 +9,7 @@
   list-style: none;
 }
 body {
-  background: linear-gradient(to right, #800080, #ee82ee); /* Purple to Violet gradient */
+  background: linear-gradient(to right, #800080, #ee82ee); 
   color: #1e1e24;
 }
 header {
@@ -176,7 +176,7 @@ header {
     background: linear-gradient(to right, #800080, #ee82ee); 
     padding: 20px;
     border-radius: 1rem;
-    color: #4b0548; /* Light text on dark background */
+    color: #4b0548; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     text-align: left;
@@ -421,16 +421,14 @@ section.contact-info {
   transition: transform 0.8s;
 }
 
-/* src/styles.css */
 
-/* Initial state before animation */
 .hidden {
   opacity: 0;
-  transform: translateY(100px); /* Adjust as needed */
-  transition: all 0.6s ease-in-out; /* Smooth transition */
+  transform: translateY(100px); 
+  transition: all 0.6s ease-in-out; 
 }
 
-/* Fade In Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -447,7 +445,7 @@ section.contact-info {
   transform: translateY(0);
 }
 
-/* Slide In from Left */
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
